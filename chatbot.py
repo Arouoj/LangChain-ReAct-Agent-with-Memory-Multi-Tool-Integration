@@ -100,8 +100,8 @@ Rules:
 2. After "Final Answer:", STOP. Do not generate more text.
 3. Tool names must match exactly: [{tool_names}]
 
-Question: {{input}}
-{{agent_scratchpad}}"""
+Question: {input}
+{agent_scratchpad}"""
 
 prompt = PromptTemplate(
     template=react_template,
